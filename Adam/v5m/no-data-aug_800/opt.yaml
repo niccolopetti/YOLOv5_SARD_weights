@@ -1,9 +1,9 @@
 weights: yolov5m.pt
-cfg: ./models/custom_yolov5m.yaml
+cfg: ./models/yolov5m.yaml
 data: ../data.yaml
 hyp: data/hyp.scratch.yaml
 epochs: 100
-batch_size: 32
+batch_size: 16
 img_size:
 - 800
 - 800
@@ -14,7 +14,7 @@ notest: false
 noautoanchor: false
 evolve: false
 bucket: ''
-cache_images: true
+cache_images: false
 image_weights: false
 device: ''
 multi_scale: false
@@ -24,7 +24,7 @@ sync_bn: false
 workers: 8
 project: runs/train
 entity: null
-name: custom_yolov5m_results
+name: yolov5m_results
 exist_ok: false
 quad: false
 linear_lr: false
@@ -34,4 +34,4 @@ bbox_interval: -1
 save_period: -1
 artifact_alias: latest
 local_rank: -1
-save_dir: runs/train/custom_yolov5m_results2
+save_dir: runs/train/yolov5m_results
